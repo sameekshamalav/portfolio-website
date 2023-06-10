@@ -352,3 +352,8 @@ body {
     background: rgb(103, 145, 212);
     color: white;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
