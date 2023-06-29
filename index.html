@@ -9,7 +9,7 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" class="css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
+    
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
     <div class="container-fluid">
@@ -185,7 +185,9 @@
             <p class="thank-you">Thank you for giving your time to this portfolio. I will be delighted to interact with
                 you.
                 You can contact
-                me on the platforms given here.</p>
+                me on the platforms given here.<br><br>
+            Want to read a quote?</p>
+            <button onclick="fetchQuote()">Yes!</button>
         </div>
     </div>
     <div class="contact-links">
@@ -194,7 +196,7 @@
                 <a href="#" class="fa fa-phone"></a>
             </div>
             <div class="text">
-                <p>+91 9050997517</p>
+                <p>+91 9050XXXXXX</p>
             </div>
         </div>
         <div class="contact-icon">
@@ -226,7 +228,12 @@
 
     </div>
 </div>
-
+<!-- <div id="quoteapi">Quote: </div>
+<button onclick="fetchQuote()">
+    Get a quote.
+</button> -->
+<script src="config.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
