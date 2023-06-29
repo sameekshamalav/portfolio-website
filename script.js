@@ -2,12 +2,12 @@
 function resume(){
   if (confirm("You will be taken to the resume link.")) document.location = '/resume.html';
 }
-var mykey=config.api_key;
+var category = 'happiness';
 function fetchQuote(){  
-  fetch('https://api.api-ninjas.com/v1/quotes', {
+  fetch('https://api.api-ninjas.com/v1/quotes?category=' + category, {
     method: "GET",
     mode: 'cors',
-    headers: { 'X-Api-Key': mykey},
+    headers: { 'X-Api-Key': 'tjp6vIHqtaWYPn2gsfixOw==79UxvIq7qx8S2MVL'},
   })
   .then(response => response.json())
   .then(data=>{
