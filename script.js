@@ -6,6 +6,7 @@ var mykey=config.api_key;
 function fetchQuote(){  
   fetch('https://api.api-ninjas.com/v1/quotes', {
     method: "GET",
+    mode: 'cors',
     headers: { 'X-Api-Key': mykey},
   })
   .then(response => response.json())
